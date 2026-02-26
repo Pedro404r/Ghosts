@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ghosts",
+	"version": "1.0.2",
+	"name": "Ghosts",
+	"description": "This mod add an evil ghost to hunt you, your objective is get a gun to kill the ghosts, earning xp to this.",
+	"authors": [
+		"Pedro Albardeiro"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ghosts/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.whoami.Ghosts"
+		],
+		"client": [
+			"dev.whoami.GhostsClient"
+		],
+		"fabric-datagen": [
+			"dev.whoami.GhostsDataGenerator"
+		]
+	},
+	"mixins": [
+		"ghosts.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

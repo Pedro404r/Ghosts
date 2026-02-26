@@ -1,0 +1,21 @@
+- O fantasma
+* mob personalizado, 2d ou 3d
+ > criar 3d mob (blockbench)
+ > configurar nova entidade (java)
+ > textura no inventario (gimp)
+ > eggspawn do inventario (gimp)
+
+- O aniquilador de fantasma
+* ferramenta personalizada 3d
+ > criar textura 2d (gimp)
+ > programar para deletar a nova entidade [fantasma] (java)
+ > adicionar a aba do criativo (java)
+ > adicionar recipe com o pattern:
+        G - Gold
+        S - Stick
+        D - Diamond
+        N - netherite
+
+         GN   
+         DG  [pattern machado] 
+         I

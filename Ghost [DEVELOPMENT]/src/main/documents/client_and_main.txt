@@ -1,0 +1,13 @@
+Client: serve para renderizar itens client-side, jamais usar em
+Server-side, risco alto de crash.
+Além de renderização pode ser usado para:
+
+- Modelos 3D
+- Renderizar Entidades
+- UI
+- Modelos/texturas
+- Particulas
+- ModMenu (configuração de mods na tela inicial)
+
+Main: o server-side, registrar itens, lógica de gameplay, receitas, loot tables.
+Caso usado em client-side não se tem risco de crash do mod.
