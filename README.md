@@ -1,21 +1,40 @@
-**EN/US**
-# Ghosts
-Just a mod, this add cool gun (ye, guns)
 
-How run mod in your machine
-first: *go in the github of the project*
-, *now, go to Releases*
-, *download the release for your minecraft version*
+# [PD's GUNS]
 
+Este mod remove os elementos de fantasmas para focar exclusivamente em um arsenal de armas de fogo potentes e funcionais no Minecraft. Desenvolvido para **Fabric 1.21.1**.
 
-**PT/BR**
+---
 
-# Fantasmas
-Apenas um mod, e dica: adiciona armas (sim, armas)
+## EN/US
 
-Como jogar com o mod?
-primeiro, vá em github.com/Pedro404r/Ghosts/
-depois vá em Releases (github)
-e baixa o correspondente a sua versão
+**Just a firearms mod (ye, guns)**
 
-**NOTE: This mod is in development and you can encounter bugs**
+A mod dedicated to adding high-quality weapons to your game, focusing on performance and combat.
+
+### How to install:
+
+1. Go to the **Releases** section of this repository.
+2. Download the `.jar` file for **Fabric 1.21.1**.
+3. Drop it into your `mods` folder.
+
+> **NOTE: This mod is in development and you can encounter bugs**.
+
+---
+
+## PT/BR
+
+**Apenas um mod de armas (sim, armas)**
+
+Um mod dedicado a adicionar armas de alta qualidade ao seu jogo, focando em performance e combate.
+
+### Como instalar:
+
+1. Vá na seção de **Releases** deste repositório.
+2. Baixe o arquivo `.jar` para **Fabric 1.21.1**.
+3. Coloque-o na sua pasta `mods`.
+
+> **NOTA: Este mod está em desenvolvimento e você pode encontrar bugs**.
+
+---
+
+**Qual desses nomes você mais gostou?** Se escolher um, posso te ajudar a personalizar o README com a descrição específica de alguma arma que você já criou!
