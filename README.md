@@ -37,4 +37,3 @@ Um mod dedicado a adicionar armas de alta qualidade ao seu jogo, focando em perf
 
 ---
 
-**Qual desses nomes você mais gostou?** Se escolher um, posso te ajudar a personalizar o README com a descrição específica de alguma arma que você já criou!
