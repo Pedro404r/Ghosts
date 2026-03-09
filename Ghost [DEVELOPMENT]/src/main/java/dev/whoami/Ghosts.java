@@ -3,7 +3,7 @@ package dev.whoami;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import dev.whoami.block.*;
+
 
 public class Ghosts implements ModInitializer {
 
@@ -14,7 +14,7 @@ public class Ghosts implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
+        GhostBlocks.registerGhostBlocks();
         LOGGER.info("Inicializando o mod " + MOD_ID);
     }
 
