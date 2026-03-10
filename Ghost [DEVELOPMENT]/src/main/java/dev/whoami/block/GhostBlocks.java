@@ -1,38 +1,46 @@
-package net.seu_nome.ghosts.block; // Ajuste o package para o seu projeto
+package dev.whoami.block;
 
+import dev.whoami.Ghosts;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.BlockState;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.state.StateManager;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.block.BlockState;
-import net.minecraft.state.property.Properties;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 
 public class GhostBlocks {
 
-    // 1. Definindo a Gun Bench com rotação
-    public static final Block GUN_BENCH = registerBlock("gun_bench", 
-        new HorizontalFacingBlock(AbstractBlock.Settings.create()
-            .strength(3.5f) // Resistência (igual ao ferro)
-            .requiresTool() // Precisa de ferramenta para quebrar
-            .nonOpaque()    // IMPORTANTE: evita sombras pretas no modelo do Blockbench
-        )
+    public static final Block GUN_BENCH = register(
+            new Block(AbstractBlock.Settings.create()
+                    .sounds(BlockSoundGroup.ANVIL)
+                    .nonOpaque()),
+            "gun_bench",
+            true
+    );
 
-    private static Block registerBlock(String name, Block block) {
-        registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of("ghosts", name), block);
+
+    public static void initialize() {
+
+        ItemGroupEvents.modifyEntriesEvent(net.minecraft.item.ItemGroups.FUNCTIONAL).register(entries -> {
+            entries.add(GUN_BENCH);
+        });
     }
 
+    private static Block register(Block block, String name, boolean shouldRegisterItem) {
+        Identifier id = Identifier.of(Ghosts.MOD_ID, name);
 
-    private static void registerBlockItem(String name, Block block) {
-        Registry.register(Registries.ITEM, Identifier.of("ghosts", name), 
-            new BlockItem(block, new Item.Settings()));
+        if (shouldRegisterItem) {
+            BlockItem blockItem = new BlockItem(block, new Item.Settings());
+            Registry.register(Registries.ITEM, id, blockItem);
+        }
+
+        return Registry.register(Registries.BLOCK, id, block);
     }
-
-
 }
