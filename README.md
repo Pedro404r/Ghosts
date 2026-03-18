@@ -1,7 +1,6 @@
 
 # [PD's GUNS]
 
-Este mod remove os elementos de fantasmas para focar exclusivamente em um arsenal de armas de fogo potentes e funcionais no Minecraft. Desenvolvido para **Fabric 1.21.1**.
 
 ---
 
